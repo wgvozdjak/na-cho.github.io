@@ -1,0 +1,49 @@
+---
+layout: default
+title: Blog
+---
+
+<div class="home">
+    <h2>Welcome to my blog!</h2>
+  
+  
+    {% if site.paginate %}
+      {% assign posts = paginator.posts %}
+    {% else %}
+      {% assign posts = site.posts %}
+    {% endif %}
+  
+  
+    {%- if posts.size > 0 -%}
+      {%- if page.list_title -%}
+        <h2 class="post-list-heading">{{ page.list_title }}</h2>
+      {%- endif -%}
+      <table style="border-collapse:collapse">
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        {%- for post in posts -%}
+        <tr>
+            <td style="vertical-align: top;">
+            <h3>
+                <a class="post-link" href="{{ post.url | relative_url }}">
+                {{ post.title | escape }}
+                </a>
+            </h3>
+            <h4 style="color: gray">
+                {{ post.subtitle }}
+            </h4>
+            {%- if site.show_excerpts -%}
+                {{ post.excerpt }}
+            {%- endif -%}
+            </td>
+            <td style="vertical-align: top;">
+                <span class="post-meta">{{ post.date | date: date_format }}</span>
+            </td>
+
+        </tr>
+        {%- endfor -%}
+    </table>
+
+
+    {%- endif -%}
+  
+  </div>

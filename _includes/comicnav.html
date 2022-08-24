@@ -1,0 +1,25 @@
+<script>
+    function randomSite(inp) {
+        var i = parseInt(Math.random() * inp) + 1;
+        location.href = "{{site.baseurl}}/blobby/" + i;
+    }
+</script>
+<center>
+    <a href="{{ site.baseurl }}/blobby/1">&laquo;&laquo;</a>
+    {% if page.url !=  "/blobby/1" %}
+        <a href="{{ site.baseurl }}/blobby/{{ page.permalink | split:"/" | last | to_integer | minus: 1}}">&laquo; Prev</a>
+    {% else %}
+        <span>&laquo; Prev</span>
+    {% endif %}
+
+    <a href="#" onclick="randomSite({{ site.comics | size }})"> Random </a>
+    {% assign numofcomics = site.comics | size %}
+    {% assign finalpageurl = "/blobby/" | append: numofcomics %}
+    {% if page.url != finalpageurl  %}
+        <a href="{{ site.baseurl }}/blobby/{{ page.permalink | split:"/" | last | to_integer | plus: 1}}">Next &raquo;</a>
+    {% else %}
+        <span>Next &raquo;</span>
+    {% endif %}
+    <a href="{{ site.baseurl }}/blobby/{{ site.comics | size}}">&raquo;&raquo;</a>
+
+</center>

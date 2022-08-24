@@ -1,0 +1,29 @@
+---
+category: comics
+---
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <body>
+
+    {%- include header.html -%}
+    <main class="page-content" aria-label="Content">
+      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+      <div style="text-align: center; height: 50px;line-height: 50px">
+      <h1 style="text-align:center; display: inline;">{{page.title}}  &nbsp;&nbsp; </h1><h4 style="text-align:center; display: inline;">{{ page.date | date: date_format }}</h4>
+      </div>
+      
+      {%- include comicnav.html -%}
+
+      {{content}}
+
+      {%- include comicnav.html -%}
+    </main>
+
+    {%- include footer.html -%}
+
+  </body>
+
+</html>
