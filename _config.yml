@@ -14,6 +14,12 @@ collections:
     output: true
 
 
+author: nacho
+
+feed:
+  collections:
+    - comics
+
 theme: minima
 plugins:
   - jekyll-feed
