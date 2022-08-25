@@ -5,6 +5,12 @@ title: Blog
 
 <div class="home">
     <h2>Welcome to my blog!</h2>
+
+    <p>If you want, <a href="{{ 'feed.xml' | relative_url }}">
+      <svg class="svg-icon orange">
+        <use xlink:href="{{ 'assets/minima-social-icons.svg#rss' | relative_url }}"></use>
+      </svg><span>subscribe</span>
+    </a> to the Atom feed for my blog.</p>
   
   
     {% if site.paginate %}
