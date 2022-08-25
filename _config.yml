@@ -3,7 +3,7 @@ email: chonachoz@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Hi! Welcome to my newly renovated personal website. 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://na-cho.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  chonacho
 
 markdown: kramdown
