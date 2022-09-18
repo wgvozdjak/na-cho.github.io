@@ -6,6 +6,9 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://na-cho.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  chonacho
 
+# Google Analytics
+google_analytics: G-ZB23WD60Y0
+
 markdown: kramdown
 # Build settings
 
