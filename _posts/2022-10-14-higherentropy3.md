@@ -3,7 +3,7 @@ layout: bpost
 title:  "Seeking Higher Entropy: Conversations [3/3]"
 subtitle: "Don't let robots replace you."
 permalink: /blog/highentropy3
-date:   2022-10-24 23:41:20 -0400
+date:   2022-10-14 23:41:20 -0400
 katex: true
 category: blog
 ---
