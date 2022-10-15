@@ -9,6 +9,7 @@ category: blog
 ---
 
 We revisit the following claim. 
+
 **Claim 1.** The happiness yield for an activity decreases if it has low entropy. 
 
 “Happiness” is quite vague. We can better understand the “happiness yield” of an activity as the tendency for people to do that activity willingly[^1].
