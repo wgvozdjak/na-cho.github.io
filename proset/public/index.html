@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>ProSet</title>
+  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+
+<body>
+  <div class="info">
+    <div id="roomname"></div>
+    <div id="plist"></div>
+    <div>
+      <button id="gamestart">Start New Game</button>
+    </div>
+  </div>
+
+  
+  <div id="log">
+  </div>
+
+ 
+  <div id="table" class="gametable">
+    <table align="center">
+      <!-- <colgroup>
+        <col width="16.6667%" />
+        <col width="16.6667%" />
+        <col width="16.6667%" />
+        <col width="16.6667%" />
+        <col width="16.6667%" />
+        <col width="16.6667%" />
+      </colgroup> 
+    --> 
+      <tbody>
+      <tr>
+        <td colspan="3" align="right">
+          <div class="card" id="0"><div class="dots-table-container"></div></div>
+        </td>
+        <td colspan="3">
+          <div class="card" id="1"><div class="dots-table-container"></div></div>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <div class="card" id="2"><div class="dots-table-container"></div></div>
+        </td>
+        <td colspan="2">
+          <div class="card" id="3"><div class="dots-table-container"></div></div>
+        </td>
+        <td colspan="2">
+          <div class="card" id="4"><div class="dots-table-container"></div></div>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="3" align="right">
+          <div class="card" id="5"><div class="dots-table-container"></div></div>
+        </td>
+        <td colspan="3">
+          <div class="card" id="6"><div class="dots-table-container"></div></div>
+        </td>
+        <td>
+          <div id="probationPile" class="faceDownCard"></div>
+        </td>
+      </tr>
+    </tbody>
+    </table>
+  </div>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+  <script>
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyDvlEqcfDvlkqBWF2__O3hRXn0RkliokqI",
+      authDomain: "proset-7fb9b.firebaseapp.com",
+      databaseURL: "https://proset-7fb9b-default-rtdb.firebaseio.com",
+      projectId: "proset-7fb9b",
+      storageBucket: "proset-7fb9b.appspot.com",
+      messagingSenderId: "145969067875",
+      appId: "1:145969067875:web:21d0072e91ea704913c556"
+    };
+    // Initialize Firebase
+    const app = firebase.initializeApp(firebaseConfig);
+  </script>
+
+
+  <script src="KeyPressListener.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>

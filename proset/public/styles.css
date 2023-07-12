@@ -1,0 +1,118 @@
+:root {
+    --dot-radius: 25px;
+}
+
+.card {
+    padding: 0;
+    border: solid black 1px;
+    background-color: white;
+    border-radius: 15px;
+    width: 125px;
+    height: 175px;
+}
+
+.faceDownCard {
+    padding: 0;
+    background-color: orange;
+    border: solid black 1px;
+    border-radius: 15px;
+    width: 125px;
+    height: 175px;
+}
+
+/*
+.targetcard {
+    position: absolute;
+    top: 200px;
+    right: 0px;
+}
+.probationpile {
+    position: absolute;
+    top: 400px;
+    right: 0px;
+} */
+.cardcount {
+    position: relative;
+    border-radius: 5px;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 70px;
+    height: 70px;
+    width: 50px;
+    background-color: white;
+    margin: 0;
+    /*position: absolute;*/
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.selected {
+    background-color: #eeeeee;
+}
+
+.dots-table-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.faded {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.dots-table {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.dot {
+    width: var(--dot-radius);
+    height: var(--dot-radius);
+    border-radius: var(--dot-radius);
+    display: block;
+    margin: auto;
+}
+
+.red-dot {
+    border: solid black 1px;
+    background-color: #ff0000;
+}
+
+.orange-dot {
+    border: solid black 1px;
+    background-color: #ff7f00;
+}
+
+.yellow-dot {
+    border: solid black 1px;
+    background-color: #ffff00;
+}
+
+.green-dot {
+    border: solid black 1px;
+    background-color: #00cc00;
+}
+
+.blue-dot {
+    border: solid black 1px;
+    background-color: #0099ff;
+}
+
+.purple-dot {
+    border: solid black 1px;
+    background-color: #9900ff;
+}
+
+
+.invisible-dot {
+    border: solid transparent 1px;
+    background-color: transparent;
+}
